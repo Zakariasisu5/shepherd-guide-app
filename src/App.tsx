@@ -12,6 +12,7 @@ import PrayerTimer from "./pages/PrayerTimer";
 import PrayerRequest from "./pages/PrayerRequest";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -75,6 +76,10 @@ const App = () => {
             <Route
               path="/about"
               element={session ? <About /> : <Navigate to="/auth" replace />}
+            />
+            <Route
+              path="/admin"
+              element={session ? <Admin /> : <Navigate to="/auth" replace />}
             />
             <Route path="*" element={<NotFound />} />
           </Routes>

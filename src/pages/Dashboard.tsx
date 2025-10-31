@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import { useAdminCheck } from "@/hooks/useAdminCheck";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -14,6 +15,7 @@ import {
   Moon,
   Sunrise,
   Sunset,
+  Shield,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -23,6 +25,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { isAdmin } = useAdminCheck();
 
   useEffect(() => {
     loadUserProfile();
@@ -202,6 +205,17 @@ const Dashboard = () => {
               <BookOpen className="w-8 h-8" />
               <span>About</span>
             </Button>
+
+            {isAdmin && (
+              <Button
+                variant="outline"
+                className="h-24 flex-col gap-2 col-span-2 bg-primary/5"
+                onClick={() => navigate("/admin")}
+              >
+                <Shield className="w-8 h-8" />
+                <span>Admin Panel</span>
+              </Button>
+            )}
           </div>
         </section>
 
