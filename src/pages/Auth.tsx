@@ -77,8 +77,8 @@ const Auth = () => {
               <img src={logo} alt="TGLW logo" className="w-12 h-12 object-cover" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold text-foreground">TGLW Global</h1>
-          <p className="text-muted-foreground">Your spiritual companion</p>
+          <h1 className="text-3xl font-bold text-card-foreground">TGLW Global</h1>
+          <p className="text-card-foreground/80">Your spiritual companion</p>
         </div>
 
         {/* Auth Form */}
@@ -86,7 +86,7 @@ const Auth = () => {
           {!isLogin && (
             <>
               <div className="space-y-2">
-                <Label htmlFor="username">Username</Label>
+                <Label htmlFor="username" className="text-card-foreground">Username</Label>
                 <Input
                   id="username"
                   type="text"
@@ -97,7 +97,7 @@ const Auth = () => {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="branch">Church Branch</Label>
+                <Label htmlFor="branch" className="text-card-foreground">Church Branch</Label>
                 <Input
                   id="branch"
                   type="text"
@@ -111,7 +111,7 @@ const Auth = () => {
           )}
 
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email" className="text-card-foreground">Email</Label>
             <Input
               id="email"
               type="email"
@@ -123,7 +123,7 @@ const Auth = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password" className="text-card-foreground">Password</Label>
             <Input
               id="password"
               type="password"
@@ -155,7 +155,7 @@ const Auth = () => {
           <button
             type="button"
             onClick={() => setIsLogin(!isLogin)}
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            className="text-sm text-card-foreground/70 hover:text-primary transition-colors"
           >
             {isLogin
               ? "Don't have an account? Sign up"
@@ -164,8 +164,8 @@ const Auth = () => {
         </div>
 
         {/* Blessing Message */}
-        <div className="text-center pt-4 border-t">
-          <p className="text-sm text-muted-foreground italic">
+        <div className="text-center pt-4 border-t border-card-foreground/20">
+          <p className="text-sm text-card-foreground/80 italic">
             "You are chosen. You are loved."
           </p>
         </div>
