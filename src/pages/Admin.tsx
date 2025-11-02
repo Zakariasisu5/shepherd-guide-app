@@ -86,53 +86,53 @@ const Admin = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Total Users</CardTitle>
+              <CardTitle className="text-sm font-medium text-card-foreground/80">Total Users</CardTitle>
               <div className="p-2 bg-primary/10 rounded-lg">
                 <Users className="h-5 w-5 text-primary" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-foreground">{stats.users}</div>
-              <p className="text-xs text-muted-foreground mt-1">Registered members</p>
+              <div className="text-3xl font-bold text-card-foreground">{stats.users}</div>
+              <p className="text-xs text-card-foreground/70 mt-1">Registered members</p>
             </CardContent>
           </Card>
 
           <Card className="border-l-4 border-l-blue-500 hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Prayer Requests</CardTitle>
+              <CardTitle className="text-sm font-medium text-card-foreground/80">Prayer Requests</CardTitle>
               <div className="p-2 bg-blue-500/10 rounded-lg">
                 <MessageSquare className="h-5 w-5 text-blue-500" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-foreground">{stats.prayerRequests}</div>
-              <p className="text-xs text-muted-foreground mt-1">Submitted prayers</p>
+              <div className="text-3xl font-bold text-card-foreground">{stats.prayerRequests}</div>
+              <p className="text-xs text-card-foreground/70 mt-1">Submitted prayers</p>
             </CardContent>
           </Card>
 
           <Card className="border-l-4 border-l-amber-500 hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Devotionals</CardTitle>
+              <CardTitle className="text-sm font-medium text-card-foreground/80">Devotionals</CardTitle>
               <div className="p-2 bg-amber-500/10 rounded-lg">
                 <Book className="h-5 w-5 text-amber-500" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-foreground">{stats.devotionals}</div>
-              <p className="text-xs text-muted-foreground mt-1">Daily devotionals</p>
+              <div className="text-3xl font-bold text-card-foreground">{stats.devotionals}</div>
+              <p className="text-xs text-card-foreground/70 mt-1">Daily devotionals</p>
             </CardContent>
           </Card>
 
           <Card className="border-l-4 border-l-purple-500 hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Media Links</CardTitle>
+              <CardTitle className="text-sm font-medium text-card-foreground/80">Media Links</CardTitle>
               <div className="p-2 bg-purple-500/10 rounded-lg">
                 <Video className="h-5 w-5 text-purple-500" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-foreground">{stats.mediaLinks}</div>
-              <p className="text-xs text-muted-foreground mt-1">Video resources</p>
+              <div className="text-3xl font-bold text-card-foreground">{stats.mediaLinks}</div>
+              <p className="text-xs text-card-foreground/70 mt-1">Video resources</p>
             </CardContent>
           </Card>
         </div>
