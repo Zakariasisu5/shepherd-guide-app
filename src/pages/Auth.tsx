@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,7 +15,6 @@ const Auth = () => {
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const [churchBranch, setChurchBranch] = useState("");
-  const navigate = useNavigate();
   const { toast } = useToast();
 
   const handleAuth = async (e: React.FormEvent) => {
@@ -36,7 +34,7 @@ const Auth = () => {
           title: "Welcome back!",
           description: "You are loved and blessed.",
         });
-        navigate("/");
+        // Navigation is handled by App.tsx based on session state
       } else {
         const { error } = await supabase.auth.signUp({
           email,
@@ -56,7 +54,7 @@ const Auth = () => {
           title: "Account created!",
           description: "Welcome to the TGLW Global family.",
         });
-        navigate("/");
+        // Navigation is handled by App.tsx based on session state
       }
     } catch (error: any) {
       toast({
