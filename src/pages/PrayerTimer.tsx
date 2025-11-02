@@ -149,7 +149,7 @@ const PrayerTimer = () => {
 
           {/* Inspiration */}
           <div className="text-center p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg">
-            <p className="text-lg font-medium text-foreground italic">
+            <p className="text-lg font-medium text-card-foreground italic">
               "Be still, and know that I am God." - Psalm 46:10
             </p>
           </div>

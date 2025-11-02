@@ -38,10 +38,10 @@ const Contact = () => {
       <main className="max-w-2xl mx-auto px-4 py-12">
         <Card className="p-8 space-y-8">
           <div className="text-center space-y-2">
-            <h2 className="text-2xl font-bold text-foreground">
+            <h2 className="text-2xl font-bold text-card-foreground">
               We're Here For You
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-card-foreground/70">
               Reach out to us anytime. We'd love to hear from you.
             </p>
           </div>
@@ -58,8 +58,8 @@ const Contact = () => {
                   <MessageCircle className="w-6 h-6 text-green-600" />
                 </div>
                 <div className="text-left">
-                  <p className="font-semibold text-foreground">WhatsApp</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="font-semibold text-card-foreground">WhatsApp</p>
+                  <p className="text-sm text-card-foreground/70">
                     Message us on WhatsApp
                   </p>
                 </div>
@@ -76,8 +76,8 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-accent" />
                 </div>
                 <div className="text-left">
-                  <p className="font-semibold text-foreground">Email</p>
-                  <p className="text-sm text-muted-foreground">{email}</p>
+                  <p className="font-semibold text-card-foreground">Email</p>
+                  <p className="text-sm text-card-foreground/70">{email}</p>
                 </div>
               </div>
             </Button>
@@ -92,8 +92,8 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <p className="font-semibold text-foreground">Call Us</p>
-                  <p className="text-sm text-muted-foreground">{phone}</p>
+                  <p className="font-semibold text-card-foreground">Call Us</p>
+                  <p className="text-sm text-card-foreground/70">{phone}</p>
                 </div>
               </div>
             </Button>
@@ -101,8 +101,8 @@ const Contact = () => {
 
           {/* Office Hours */}
           <div className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg">
-            <h3 className="font-semibold text-foreground mb-4">Office Hours</h3>
-            <div className="space-y-2 text-sm text-muted-foreground">
+            <h3 className="font-semibold text-card-foreground mb-4">Office Hours</h3>
+            <div className="space-y-2 text-sm text-card-foreground/80">
               <div className="flex justify-between">
                 <span>Monday - Friday</span>
                 <span className="font-medium">9:00 AM - 5:00 PM</span>
@@ -120,7 +120,7 @@ const Contact = () => {
 
           {/* Message */}
           <div className="text-center">
-            <p className="text-sm text-muted-foreground italic">
+            <p className="text-sm text-card-foreground/80 italic">
               "May the Lord bless you and keep you"
             </p>
           </div>

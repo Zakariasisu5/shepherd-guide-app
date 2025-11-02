@@ -27,18 +27,18 @@ const About = () => {
               <Heart className="w-8 h-8 text-white" fill="currentColor" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-foreground">TGLW Global</h2>
-              <p className="text-muted-foreground">The Gospel Living Word</p>
+              <h2 className="text-2xl font-bold text-card-foreground">TGLW Global</h2>
+              <p className="text-card-foreground/70">The Gospel Living Word</p>
             </div>
           </div>
 
           <div className="space-y-4">
             <div>
-              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+              <h3 className="font-semibold text-card-foreground mb-2 flex items-center gap-2">
                 <Users className="w-5 h-5" />
                 Our Mission
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-card-foreground/80 leading-relaxed">
                 To spread the Gospel of Jesus Christ and empower believers to live
                 transformed lives through the power of God's Word. We are committed to
                 building a global community of faith, hope, and love.
@@ -46,11 +46,11 @@ const About = () => {
             </div>
 
             <div>
-              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+              <h3 className="font-semibold text-card-foreground mb-2 flex items-center gap-2">
                 <Heart className="w-5 h-5" />
                 Our Vision
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-card-foreground/80 leading-relaxed">
                 To be a beacon of light in the world, reaching souls across all nations,
                 and establishing churches that reflect God's glory. We envision a world
                 where every person experiences the transforming love of Christ.
@@ -58,11 +58,11 @@ const About = () => {
             </div>
 
             <div>
-              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+              <h3 className="font-semibold text-card-foreground mb-2 flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
                 Our Location
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-card-foreground/80 leading-relaxed">
                 With branches across multiple cities and countries, TGLW Global is
                 building a worldwide family of believers. Visit your local branch to
                 experience worship, fellowship, and spiritual growth.
@@ -73,7 +73,7 @@ const About = () => {
 
         {/* Man of God */}
         <Card className="p-8 space-y-6">
-          <h2 className="text-2xl font-bold text-foreground">Leadership</h2>
+          <h2 className="text-2xl font-bold text-card-foreground">Leadership</h2>
 
           <div className="space-y-4">
             <div className="flex items-center gap-4">
@@ -81,16 +81,16 @@ const About = () => {
                 MG
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground">
+                <h3 className="text-xl font-bold text-card-foreground">
                   Pastor [Name]
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-card-foreground/70">
                   Senior Pastor & Founder
                 </p>
               </div>
             </div>
 
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-card-foreground/80 leading-relaxed">
               Called by God and anointed to lead His people, our pastor has dedicated
               their life to serving the Kingdom. With a heart for souls and a passion
               for God's Word, they have been instrumental in transforming countless lives
@@ -98,7 +98,7 @@ const About = () => {
             </p>
 
             <div className="p-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg">
-              <p className="text-sm text-foreground italic">
+              <p className="text-sm text-card-foreground italic">
                 "My prayer is that you would encounter God's love in a fresh way and
                 experience the abundant life Jesus promised."
               </p>
@@ -108,11 +108,11 @@ const About = () => {
 
         {/* Developer Credit */}
         <Card className="p-6 bg-gradient-to-br from-primary/5 to-accent/5 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-card-foreground/80">
             Developed with ❤️ by{" "}
-            <span className="font-semibold text-foreground">Zakaria Sisu</span>
+            <span className="font-semibold text-card-foreground">Zakaria Sisu</span>
           </p>
-          <p className="text-xs text-muted-foreground mt-1">
+          <p className="text-xs text-card-foreground/70 mt-1">
             Built to serve the Kingdom of God
           </p>
         </Card>

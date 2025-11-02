@@ -76,10 +76,10 @@ const PrayerRequest = () => {
       <main className="max-w-2xl mx-auto px-4 py-12">
         <Card className="p-8">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-foreground mb-2">
+            <h2 className="text-2xl font-bold text-card-foreground mb-2">
               Share Your Prayer Request
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-card-foreground/70">
               We believe in the power of prayer. Let us pray with you.
             </p>
           </div>
@@ -136,10 +136,10 @@ const PrayerRequest = () => {
 
           {/* Encouraging Message */}
           <div className="mt-8 p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg text-center">
-            <p className="text-sm text-foreground italic">
+            <p className="text-sm text-card-foreground italic">
               "The prayer of a righteous person is powerful and effective."
               <br />
-              <span className="text-xs text-muted-foreground">- James 5:16</span>
+              <span className="text-xs text-card-foreground/70">- James 5:16</span>
             </p>
           </div>
         </Card>

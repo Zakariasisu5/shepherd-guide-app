@@ -130,8 +130,8 @@ const Dashboard = () => {
                     <BookOpen className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold">Morning Devotional</p>
-                    <p className="text-sm text-muted-foreground">10:00 AM</p>
+                    <p className="font-semibold text-card-foreground">Morning Devotional</p>
+                    <p className="text-sm text-card-foreground/70">10:00 AM</p>
                   </div>
                 </div>
               </div>
@@ -144,8 +144,8 @@ const Dashboard = () => {
                     <Heart className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <p className="font-semibold">Meditation Time</p>
-                    <p className="text-sm text-muted-foreground">3:00 PM</p>
+                    <p className="font-semibold text-card-foreground">Meditation Time</p>
+                    <p className="text-sm text-card-foreground/70">3:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -158,8 +158,8 @@ const Dashboard = () => {
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold">Prayer Time</p>
-                    <p className="text-sm text-muted-foreground">6:00 PM</p>
+                    <p className="font-semibold text-card-foreground">Prayer Time</p>
+                    <p className="text-sm text-card-foreground/70">6:00 PM</p>
                   </div>
                 </div>
               </div>
